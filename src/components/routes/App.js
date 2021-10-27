@@ -8,10 +8,12 @@ import {
 } from 'react-router-dom'
 
 function App() {
+
     return(
         <Router>
             <Switch>
                 <Route path="/" exact>
+
                     <Home />
                 </Route>
             </Switch>

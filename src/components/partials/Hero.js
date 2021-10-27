@@ -21,7 +21,7 @@ function Hero() {
         // console.log('Form submitted')
         const response = await getData(stateLocation)
 
-        console.log(response)
+        // console.log(response)
         if (response) {
             const { location: { country, lon, lat } } = response
             const { current: { temp_c, temp_f, condition: { text, icon, code } } } = response

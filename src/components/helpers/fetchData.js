@@ -1,8 +1,10 @@
 import axios from 'axios'
 
+const apiKey = process.env.REACT_APP_APIKEY
+
 const getData = async (location = 'Kampala') => {
-    
-    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=fdd18b52417e444c842134157212210&q=${location}`;
+
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}`;
     let response = ''
 
     try {
